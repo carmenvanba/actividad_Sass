@@ -1,7 +1,19 @@
 //Variables
+$primaryColor: #581845;
+$secondaryColor: #900C3F;
+$contrastColor: #FFC300;
+$titleFont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 $textFont: Helvetica, sans-serif;
+$imageWidth: 1280px;
+$titleColor: $secondaryColor;
+$borderColor: $primaryColor;
 
 
+h1{
+    color: $titleColor;
+    font-family: $titleFont;
+}
 .container{
     font-family: $textFont;
+
 }
