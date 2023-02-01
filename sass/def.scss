@@ -21,6 +21,7 @@ h1{
 .header_img{
     width: $imageWidth/4;
 }
+
 //Loop test
 $columns: 5;
 @for $i from 1 through $columns {
@@ -30,24 +31,7 @@ $columns: 5;
         color: white;
     }
 }
-//column loop test
-$grid-columns: 12;
 
-@for $i from 1 through $grid-columns {
-  .grid-#{$i} {
-    width: percentage($i / $grid-columns);
-  }
-}
-// styles column loop test
-[class^='grid-'] {
-  border: 1px solid;
-  box-sizing: border-box;
-  float: left;
-  padding: 1em 0;
-  text-align: center;
-}
-
-//prueba concatenacion
 .con#{$prueba}{
     background-color: blue;
 }
