@@ -1,3 +1,4 @@
+@import "_mixin.sass";
 //Variables
 $primaryColor: #581845;
 $secondaryColor: #900C3F;
@@ -7,7 +8,7 @@ $textFont: Helvetica, sans-serif;
 $imageWidth: 1280px;
 $titleColor: $secondaryColor;
 $borderColor: $primaryColor;
-
+$prueba: tenedor;
 
 h1{
     color: $titleColor;
@@ -17,3 +18,25 @@ h1{
     font-family: $textFont;
 
 }
+
+.header_img{
+    width: $imageWidth/4;
+}
+
+//Loop test
+$columns: 5;
+@for $i from 1 through $columns {
+    .columns-#{$i} {
+        width: (25% / $i);
+        background-color: #581845/$i;
+        color: white;
+    }
+}
+
+.con#{$prueba}{
+    background-color: blue;
+}
+
+
+
+
