@@ -10,6 +10,7 @@ $borderColor: $primaryColor;
 $prueba: tenedor;
 
 h1{
+    text-transform: uppercase;
     color: $titleColor;
     font-family: $titleFont;
 }
@@ -25,7 +26,7 @@ h1{
 $columns: 5;
 @for $i from 1 through $columns {
     .columns-#{$i} {
-        width: (25% / $i);
+        width: (100% / $i);
         background-color: #581845/$i;
         color: white;
     }
@@ -49,7 +50,7 @@ $grid-columns: 12;
 
 //prueba concatenacion
 .con#{$prueba}{
-    background-color: blue;
+    background-color: blue + red;
 }
 
 //6 Variables: hecho
@@ -61,3 +62,6 @@ $grid-columns: 12;
 //2 Includes + otras funciones:
 
 
+img{
+  width: 100%;
+}
