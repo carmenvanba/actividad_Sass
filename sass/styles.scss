@@ -11,7 +11,7 @@ $titleColor: $primaryColor;
 $borderColor: $secondaryColor;
 $prueba: tenedor;
 
-//Texts
+
 h1{
     text-transform: uppercase;
     color: $titleColor;
@@ -62,14 +62,10 @@ $columns: 5;
     }
 }
 
-
-
-
 //Concatenacion
 .con#{$prueba}{
-    background-color: blue + red;
+    background-color: $contrastSecondaryColor;
 }
-
 
 //Gallery
 div.gallery {
@@ -118,12 +114,98 @@ $sizes: 40px, 50px, 80px;
   }
 }
 
+//Mixin and includes
+//List
+@mixin reset-list {
+  margin: 0;
+  padding: 5;
+  list-style: none;
+  color: $primaryColor;
+}
+
+@mixin horizontal-list {
+  @include reset-list;
+  li {
+    display: inline-block;
+    margin: {
+      left: -2px;
+      right: 2em;
+    }
+  }
+}
+
+nav ul {
+  @include horizontal-list;
+}
+
+//Icon
+@mixin square($size, $radius: 0) {
+  width: $size;
+  height: $size;
+
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
+.icon {
+  @include square(100px, $radius: 4px);
+}
+
+//Button
+@mixin hover {
+  &:not([disabled]):hover {
+    @content;
+  }
+}
+.button {
+  border: 7px solid $primaryColor;
+  background-color: $secondaryColor;
+  @include hover {
+    border: 7px solid $secondaryColor;
+    background-color: $primaryColor;
+  }
+}
+//Important text 
+@mixin important-text {
+  color: $secondaryColor;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid $contrastColor;
+  margin-right: 5px;
+}
+
+.important_text{
+  @include important-text();
+}
+
+//Functions
+@function double($var) {
+  @return $var*2;
+}
+@function half($var) {
+  @return $var/2;
+}
+.box_double{
+  width: double(200px);
+  background-color: $contrastColor;
+}
+.box_half{
+  width: half(500px);
+  background-color: $contrastSecondaryColor;
+}
+
+@function getNewColor($varColor) {
+  @return $varColor*2;
+}
+.data{
+  background-color: getNewColor($contrastSecondaryColor);
+}
 
 //6 Variables: hecho
 //6 selectores: hecho
 //4 Operaciones: hecho
 //4 Bucles: hecho
+//2 Includes: hecho
 
-//4 Funciones:
-//6 Mixins:
-//2 Includes + otras funciones:
+//4 Funciones//1 funciones:
+//6 Mixins//1 mixin: 

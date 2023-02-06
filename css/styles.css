@@ -57,7 +57,7 @@ img {
   color: white; }
 
 .contenedor {
-  background-color: magenta; }
+  background-color: #ffc470; }
 
 div.gallery {
   margin: 5px;
@@ -132,5 +132,45 @@ div.gallery {
   font-size: 80px;
   height: 80px;
   width: 80px; }
+
+nav ul {
+  margin: 0;
+  padding: 5;
+  list-style: none;
+  color: #3c045c; }
+  nav ul li {
+    display: inline-block;
+    margin-left: -2px;
+    margin-right: 2em; }
+
+.icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px; }
+
+.button {
+  border: 7px solid #3c045c;
+  background-color: #6f3c8c; }
+  .button:not([disabled]):hover {
+    border: 7px solid #6f3c8c;
+    background-color: #3c045c; }
+
+.important_text {
+  color: #6f3c8c;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid #fba52a;
+  margin-right: 5px; }
+
+.box_double {
+  width: 400px;
+  background-color: #fba52a; }
+
+.box_half {
+  width: 250px;
+  background-color: #ffc470; }
+
+.data {
+  background-color: lightyellow; }
 
 /*# sourceMappingURL=styles.css.map */
