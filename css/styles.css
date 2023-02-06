@@ -14,11 +14,11 @@ a {
 .header_img {
   width: 213.3333333333px; }
 
-.galery_img {
-  width: 426.6666666667px; }
-
 img {
   width: 100%; }
+
+.logo_img {
+  width: 100px; }
 
 .columns-1 {
   width: 100%;
@@ -84,12 +84,49 @@ img {
 [class^='grid-'] {
   border: 4px solid #6f3c8c;
   background-color: #dfcbd0;
-  box-sizing: border-box;
-  float: left;
-  padding: 1em 0;
-  text-align: center; }
+  float: left; }
 
 .contenedor {
   background-color: magenta; }
+
+.module-4 {
+  background-color: #ffffa8; }
+
+.module-3 {
+  background-color: #ffff7e; }
+
+.module-2 {
+  background-color: #ffff54; }
+
+.module-1 {
+  background-color: #fba52a; }
+
+div.gallery {
+  margin: 5px;
+  border: 2px solid #6f3c8c;
+  float: left;
+  width: 180px; }
+  div.gallery:hover {
+    border: 3px solid #fba52a; }
+  div.gallery img {
+    width: 100%;
+    height: auto; }
+  div.gallery .desc {
+    padding: 15px;
+    text-align: center; }
+  div.gallery .grid-1 {
+    width: 14.2857142857%; }
+  div.gallery .grid-2 {
+    width: 28.5714285714%; }
+  div.gallery .grid-3 {
+    width: 42.8571428571%; }
+  div.gallery .grid-4 {
+    width: 57.1428571429%; }
+  div.gallery .grid-5 {
+    width: 71.4285714286%; }
+  div.gallery .grid-6 {
+    width: 85.7142857143%; }
+  div.gallery .grid-7 {
+    width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
