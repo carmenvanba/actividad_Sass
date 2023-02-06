@@ -64,35 +64,11 @@ $columns: 5;
 
 
 
-//Columns loop
-$grid-columns: 12;
-@for $i from 1 through $grid-columns {
-  .grid-#{$i} {
-    width: percentage($i / $grid-columns);
-  }
-}
-//Styles column loop test
-[class^='grid-'] {
-  border: 4px solid $borderColor;
-  background-color: $lightColor;
-  float: left;
-}
 
 //Concatenacion
 .con#{$prueba}{
     background-color: blue + red;
 }
-
-
-//While loop
-$num: 4;
-@while $num > 0 {
-  .module-#{$num} {
-    background-color: $secondaryColor*$num;
-  }
-  $num: $num - 1;
-}
-
 
 
 //Gallery
@@ -121,10 +97,32 @@ div.gallery {
   }
 }
 
+//While loop Font Size
+$custom-font-size: 16;
+@while $custom-font-size <= 26 {
+  .font-size-#{$custom-font-size} {
+    font-size: #{$custom-font-size}px;
+    line-height: #{$custom-font-size + 2}px;
+  }
+  // Increment the count
+  $custom-font-size: $custom-font-size + 2;
+}
+
+//Icon loop
+$sizes: 40px, 50px, 80px;
+@each $size in $sizes {
+  .icon-#{$size} {
+    font-size: $size;
+    height: $size;
+    width: $size;
+  }
+}
+
+
 //6 Variables: hecho
 //6 selectores: hecho
 //4 Operaciones: hecho
 //4 Funciones:
 //6 Mixins:
-//4 Bucles: 
+//4 Bucles: hecho
 //2 Includes + otras funciones:
