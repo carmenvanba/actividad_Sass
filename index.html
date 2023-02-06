@@ -2,133 +2,150 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <!--My Styles-->
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Actividad Sass</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../images/logo.jpg">
+  <!-- Bootstrap CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!--My Styles-->
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Actividad Sass</title>
 </head>
 
+<header>
+  <div class="p-4 p-md-5 mb-4">
+    <div class="row">
+      <div class="col-md-6 px-5">
+        <h1>Galería Jester's Haunt</h1>
+        <p class="lead my-3">Una pequeña exposición de los trabajos de Jester's Haunt: tienda de
+          dados artesanos hechos a mano.
+        </p>
+        <p class="lead mb-0"><a href="https://jesters-haunt.square.site/" class="fw-bold">Enlance
+            directo a la tienda</a></p>
+      </div>
+      <div class="col-md-6 ps-5">
+        <img src="./images/logo.jpg" class="header_img img-fluid float-end pe-5" alt="image">
+      </div>
+    </div>
+  </div>
+</header>
+
 <body>
-    <h1>Lorem ipsum dolor sit amet.</h1>
-    <a href="#">Lorem, ipsum.</a>
-    <br>
-    <img src="./images/placeholder_img.png" class="header_img img-fluid" alt="image">
-    <div class="columns-1">Lorem ipsum dolor sit amet consectetur.</div>
-    <div class="columns-2">Lorem ipsum dolor sit.</div>
-    <div class="columns-3">Lorem, ipsum.</div>
-    <div class="columns-4">Lorem.</div>
-    <div class="columns-5">Lorem</div>
 
+  <div class="container_top">
+    <div class="container">
+      <div class="columns-1 p-2">Pasión por el roleplay y la artesanía.</div>
+      <div class="columns-2 p-2">Dados artesanales hechos a mano.</div>
+      <div class="columns-3 p-2">Buenos, bonitos y baratos.</div>
+      <div class="columns-4 p-2">Pasión por la artesanía.</div>
+      <div class="columns-5 p-2">Tu tienda de confianza.</div>
+    </div>
+  </div>
 
-
-    <div class="contenedor">DHASKDH</div>
-
-
-
-    <div class="row align-items-md-stretch">
-        <div class="col-md-6">
-            <div class="h-100 p-5 text-white bg-dark rounded-3">
-                <h2>Change the background</h2>
-                <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look.
-                    Then, mix and match with additional component themes and more.</p>
-                <button class="btn btn-outline-light" type="button">Example button</button>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="h-100 p-5 bg-light border rounded-3">
-                <h2>Add borders</h2>
-                <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be
-                    sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of
-                    both column's content for equal-height.</p>
-                <button class="btn btn-outline-secondary" type="button">Example button</button>
-            </div>
-        </div>
+  <div class="contenedor">
+    <h1 class="text-center mt-5">Galería</h1>
+  </div>
+  <!--1º gallery-->
+  <div class="container p-5 d-flex justify-content-center">
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="./images/dados_01.jpg" class="gallery_img" alt="">
+      </a>
+      <div class="desc-1 font-size-16">Oceansong set</div>
     </div>
 
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="./images/dados_02.jpg" class="gallery_img" alt="">
+      </a>
+      <div class="desc-2 font-size-18">Prysma set</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="./images/dados_03.jpg" class="gallery_img" alt="">
+      </a>
+      <div class="desc-3 font-size-20">Kitsugi set</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="">
+        <img src="./images/dados_04.jpg" class="gallery_img" alt="">
+      </a>
+      <div class="desc-4 font-size-22">Purity set</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="./images/dados_05.jpg" class="gallery_img" alt="">
+      </a>
+      <div class="desc-5 font-size-24">Rose Gold set</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="./images/dados_06.jpg" class="gallery_img" alt="">
+      </a>
+      <div class="desc-6 font-size-26">Fancy Evil set</div>
+    </div>
+  </div>
+
+
+
+  <!--2º gallery-->
+  <div class="container p-5 d-flex justify-content-center">
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="./images/dados_07.jpg" class="gallery_img" alt="">
+      </a>
+      <div class="desc-1 font-size-26">Bless set</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="./images/dados_08.jpg" class="gallery_img" alt="">
+      </a>
+      <div class="desc-2 font-size-24">Starkle set</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="./images/dados_09.jpg" class="gallery_img" alt="">
+      </a>
+      <div class="desc-3 font-size-22">Vampire's luck set</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="">
+        <img src="./images/dados_10.jpg" class="gallery_img" alt="">
+      </a>
+      <div class="desc-4 font-size-20">Sweet Dream set</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="./images/dados_11.jpg" class="gallery_img" alt="">
+      </a>
+      <div class="desc-5 font-size-18">Potion Core set</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="./images/dados_12.jpg" class="gallery_img" alt="">
+      </a>
+      <div class="desc-6 font-size-16">Potion Core 2 set</div>
+    </div>
+  </div>
 
 
 
 
 
+  <img src="./images/logo.jpg" class="icon-40px float-end" alt="">
+  <img src="./images/logo.jpg" class="icon-50px float-end" alt="">
+  <img src="./images/logo.jpg" class="icon-80px float-end" alt="">
 
 
 
-
-
-
-
-
-
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./images/test.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                </li>
-                <button class="btn btn-outline-secondary" type="button">Example button</button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./images/test.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                </li>
-                <button class="btn btn-outline-light" type="button">Example button</button>
-              </ul>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./images/test.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h2>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                  <small>California</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                  <small>5d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Adding Bootstrap Framework -->
-    <script src="../js/bootstrap.min.js"></script>
+  <!-- Adding Bootstrap Framework -->
+  <script src="./js/bootstrap.min.js"></script>
 </body>
 
 </html>
