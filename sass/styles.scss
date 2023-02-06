@@ -1,47 +1,71 @@
 //Variables
-$primaryColor: #581845;
-$secondaryColor: #900C3F;
-$contrastColor: #FFC300;
+$primaryColor: #3c045c;
+$secondaryColor: #6f3c8c;
+$contrastColor: #fba52a;
+$contrastSecondaryColor: #ffc470;
+$lightColor:#dfcbd0;
 $titleFont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 $textFont: Helvetica, sans-serif;
 $imageWidth: 1280px;
-$titleColor: $secondaryColor;
-$borderColor: $primaryColor;
+$titleColor: $primaryColor;
+$borderColor: $secondaryColor;
 $prueba: tenedor;
 
+//Texts
 h1{
     text-transform: uppercase;
     color: $titleColor;
     font-family: $titleFont;
 }
+a {
+  color: $contrastColor;
+  &:hover {
+    color: $contrastSecondaryColor;
+  }
+}
+
+//Containers
 .container{
     font-family: $textFont;
-
 }
 
+//Images
 .header_img{
-    width: $imageWidth/4;
+    width: $imageWidth/6;
 }
-//Loop test
+.galery_img{
+  width: $imageWidth/3;
+}
+img{
+  width: 100%;
+}
+
+
+//1º Loop
 $columns: 5;
 @for $i from 1 through $columns {
     .columns-#{$i} {
         width: (100% / $i);
-        background-color: #581845/$i;
+        background-color: $secondaryColor/$i;
         color: white;
     }
 }
-//column loop test
-$grid-columns: 12;
 
+
+
+
+//Columns loop
+$grid-columns: 12;
 @for $i from 1 through $grid-columns {
   .grid-#{$i} {
     width: percentage($i / $grid-columns);
   }
 }
+
 // styles column loop test
 [class^='grid-'] {
-  border: 1px solid;
+  border: 4px solid $borderColor;
+  background-color: $lightColor;
   box-sizing: border-box;
   float: left;
   padding: 1em 0;
@@ -54,14 +78,9 @@ $grid-columns: 12;
 }
 
 //6 Variables: hecho
-//6 selectores:
+//6 selectores: 
 //4 Operaciones:
 //4 Funciones:
 //6 Mixins:
 //4 Bucles:
 //2 Includes + otras funciones:
-
-
-img{
-  width: 100%;
-}
