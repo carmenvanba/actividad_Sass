@@ -154,7 +154,7 @@ nav ul {
 .icon {
   width: 100px;
   height: 100px;
-  border-radius: 4px; }
+  border-radius: 50px; }
 
 .button {
   border: 7px solid #3c045c;
@@ -165,22 +165,24 @@ nav ul {
 
 .important_text {
   color: #6f3c8c;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
-  border-bottom: 3px dotted #fba52a;
-  margin-right: 5px; }
+  border-bottom: 3px dotted #fba52a; }
 
 .box_double {
   width: 400px;
   color: #dfcbd0;
   border-top: solid #fba52a;
-  text-align: center; }
+  text-align: center;
+  padding: 5px; }
 
 .box_half {
   width: 250px;
   color: #dfcbd0;
   border-top: solid #ffc470;
-  text-align: center; }
+  text-align: center;
+  margin: 10px;
+  padding: 5px; }
 
 .data {
   background-color: lightyellow; }

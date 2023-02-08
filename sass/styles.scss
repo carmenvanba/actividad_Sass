@@ -158,7 +158,7 @@ nav ul {
   }
 }
 .icon {
-  @include square(100px, $radius: 4px);
+  @include square(100px, $radius: 50px);
 }
 
 //Button
@@ -170,6 +170,7 @@ nav ul {
 .button {
   border: 7px solid $primaryColor;
   background-color: $secondaryColor;
+  
   @include hover {
     border: 7px solid $secondaryColor;
     background-color: $primaryColor;
@@ -178,10 +179,9 @@ nav ul {
 //Important text 
 @mixin important-text {
   color: $secondaryColor;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   border-bottom: 3px dotted $contrastColor;
-  margin-right: 5px;
 }
 
 .important_text{
@@ -206,12 +206,15 @@ nav ul {
   color: $lightColor;
   border-top: solid $contrastColor;
   text-align: center;
+  padding: 5px;
 }
 .box_half{
   width: half(500px);
   color: $lightColor;
   border-top: solid $contrastSecondaryColor;
   text-align: center;
+  margin: 10px;
+  padding: 5px;
 }
 .data{
   background-color: getNewColor($contrastSecondaryColor);
