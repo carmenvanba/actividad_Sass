@@ -67,7 +67,7 @@ $cont: 5;
 @for $i from 1 through $cont {
     .lanes-#{$i} {
         width: (90% / $i);
-        border-bottom: solid 3px $secondaryColor/$i;
+        border-bottom: solid 3px $contrastColor/$i;
     }
 }
 
@@ -220,11 +220,19 @@ nav ul {
   background-color: getNewColor($contrastSecondaryColor);
 }
 
-//6 Variables: hecho
-//6 selectores: hecho
-//4 Operaciones: hecho
-//4 Bucles: hecho
-//2 Includes: hecho
 
-//4 Funciones//1 funciones:
-//6 Mixins//1 mixin: 
+//1 funciones:
+//1 mixin: 
+
+
+@mixin circle {
+  width: 10px;
+  height: 10px;
+  background: $contrastSecondaryColor;
+  border-radius: 50%;
+}
+
+
+.circle {
+  @include circle;
+}
