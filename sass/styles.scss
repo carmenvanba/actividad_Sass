@@ -25,18 +25,28 @@ a {
 }
 
 //Containers
+header {
+  overflow: hidden;
+}
+header img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
 .container{
     font-family: $textFont;
     width: 70%;
 }
-.container_top{
-  font-family: $textFont;
-  background-image: url('../images/dados_bg_01.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 10%;
-}
 
+footer{
+  background-color: $primaryColor;
+  color: $contrastColor;
+  a {
+    color: $contrastColor;
+    &:hover {
+      color: $contrastSecondaryColor;
+    }
+  }
+}
 //Images
 .header_img{
     width: $imageWidth/6;
@@ -53,18 +63,17 @@ img{
 }
 
 //Loop Top
-$columns: 5;
-@for $i from 1 through $columns {
-    .columns-#{$i} {
+$cont: 5;
+@for $i from 1 through $cont {
+    .lanes-#{$i} {
         width: (90% / $i);
-        background-color: $secondaryColor/$i;
-        color: white;
+        border-bottom: solid 3px $secondaryColor/$i;
     }
 }
 
 //Concatenacion
 .con#{$prueba}{
-    background-color: $contrastSecondaryColor;
+    border-top: solid 3px $contrastSecondaryColor;
 }
 
 //Gallery
@@ -73,6 +82,7 @@ div.gallery {
   border-top: 3px solid $secondaryColor;
   float: left;
   width: 180px;
+  color: $primaryColor;
   &:hover {
     border-top: 5px solid $contrastColor;
   }
@@ -89,13 +99,13 @@ div.gallery {
  //Gallery loop
  @for $i from 1 through 7{
   .desc-#{$i}{
-    background-color: $contrastColor*$i;
+    border-bottom: solid 2px $primaryColor*$i;
   }
 }
 
 //While loop Font Size
-$custom-font-size: 16;
-@while $custom-font-size <= 26 {
+$custom-font-size: 12;
+@while $custom-font-size <= 24 {
   .font-size-#{$custom-font-size} {
     font-size: #{$custom-font-size}px;
     line-height: #{$custom-font-size + 2}px;
@@ -170,7 +180,7 @@ nav ul {
   color: $secondaryColor;
   font-size: 25px;
   font-weight: bold;
-  border: 1px solid $contrastColor;
+  border-bottom: 3px dotted $contrastColor;
   margin-right: 5px;
 }
 
@@ -185,17 +195,23 @@ nav ul {
 @function half($var) {
   @return $var/2;
 }
+@function getNewColor($varColor) {
+  @return $varColor*2;
+}
+
+
+//Using functions
 .box_double{
   width: double(200px);
-  background-color: $contrastColor;
+  color: $lightColor;
+  border-top: solid $contrastColor;
+  text-align: center;
 }
 .box_half{
   width: half(500px);
-  background-color: $contrastSecondaryColor;
-}
-
-@function getNewColor($varColor) {
-  @return $varColor*2;
+  color: $lightColor;
+  border-top: solid $contrastSecondaryColor;
+  text-align: center;
 }
 .data{
   background-color: getNewColor($contrastSecondaryColor);

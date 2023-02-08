@@ -8,16 +8,24 @@ a {
   a:hover {
     color: #ffc470; }
 
+header {
+  overflow: hidden; }
+
+header img {
+  margin-left: 50%;
+  transform: translateX(-50%); }
+
 .container {
   font-family: Helvetica, sans-serif;
   width: 70%; }
 
-.container_top {
-  font-family: Helvetica, sans-serif;
-  background-image: url("../images/dados_bg_01.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 10%; }
+footer {
+  background-color: #3c045c;
+  color: #fba52a; }
+  footer a {
+    color: #fba52a; }
+    footer a:hover {
+      color: #ffc470; }
 
 .header_img {
   width: 213.3333333333px; }
@@ -31,39 +39,35 @@ img {
 .logo_img {
   width: 100px; }
 
-.columns-1 {
+.lanes-1 {
   width: 90%;
-  background-color: #6f3c8c;
-  color: white; }
+  border-bottom: solid 3px #6f3c8c; }
 
-.columns-2 {
+.lanes-2 {
   width: 45%;
-  background-color: #381e46;
-  color: white; }
+  border-bottom: solid 3px #381e46; }
 
-.columns-3 {
+.lanes-3 {
   width: 30%;
-  background-color: #25142f;
-  color: white; }
+  border-bottom: solid 3px #25142f; }
 
-.columns-4 {
+.lanes-4 {
   width: 22.5%;
-  background-color: #1c0f23;
-  color: white; }
+  border-bottom: solid 3px #1c0f23; }
 
-.columns-5 {
+.lanes-5 {
   width: 18%;
-  background-color: #160c1c;
-  color: white; }
+  border-bottom: solid 3px #160c1c; }
 
 .contenedor {
-  background-color: #ffc470; }
+  border-top: solid 3px #ffc470; }
 
 div.gallery {
   margin: 5px;
   border-top: 3px solid #6f3c8c;
   float: left;
-  width: 180px; }
+  width: 180px;
+  color: #3c045c; }
   div.gallery:hover {
     border-top: 5px solid #fba52a; }
   div.gallery img {
@@ -74,25 +78,33 @@ div.gallery {
     text-align: center; }
 
 .desc-1 {
-  background-color: #fba52a; }
+  border-bottom: solid 2px #3c045c; }
 
 .desc-2 {
-  background-color: #ffff54; }
+  border-bottom: solid 2px #7808b8; }
 
 .desc-3 {
-  background-color: #ffff7e; }
+  border-bottom: solid 2px #b40cff; }
 
 .desc-4 {
-  background-color: #ffffa8; }
+  border-bottom: solid 2px #f010ff; }
 
 .desc-5 {
-  background-color: #ffffd2; }
+  border-bottom: solid 2px #ff14ff; }
 
 .desc-6 {
-  background-color: #fffffc; }
+  border-bottom: solid 2px #ff18ff; }
 
 .desc-7 {
-  background-color: white; }
+  border-bottom: solid 2px #ff1cff; }
+
+.font-size-12 {
+  font-size: 12px;
+  line-height: 14px; }
+
+.font-size-14 {
+  font-size: 14px;
+  line-height: 16px; }
 
 .font-size-16 {
   font-size: 16px;
@@ -113,10 +125,6 @@ div.gallery {
 .font-size-24 {
   font-size: 24px;
   line-height: 26px; }
-
-.font-size-26 {
-  font-size: 26px;
-  line-height: 28px; }
 
 .icon-40px {
   font-size: 40px;
@@ -159,16 +167,20 @@ nav ul {
   color: #6f3c8c;
   font-size: 25px;
   font-weight: bold;
-  border: 1px solid #fba52a;
+  border-bottom: 3px dotted #fba52a;
   margin-right: 5px; }
 
 .box_double {
   width: 400px;
-  background-color: #fba52a; }
+  color: #dfcbd0;
+  border-top: solid #fba52a;
+  text-align: center; }
 
 .box_half {
   width: 250px;
-  background-color: #ffc470; }
+  color: #dfcbd0;
+  border-top: solid #ffc470;
+  text-align: center; }
 
 .data {
   background-color: lightyellow; }
