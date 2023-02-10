@@ -220,19 +220,31 @@ nav ul {
   background-color: getNewColor($contrastSecondaryColor);
 }
 
-
-//1 funciones:
-//1 mixin: 
-
-
-@mixin circle {
-  width: 10px;
-  height: 10px;
-  background: $contrastSecondaryColor;
-  border-radius: 50%;
+@function power($base, $expo){
+  $result: 1;
+  @for $_ from 1 through $expo{
+    $result: $result * $base;
+  }
+  @return $result;
+}
+.sidebar{
+  float: right;
+  margin-left: power(6, 2) * 2px;
 }
 
 
-.circle {
-  @include circle;
+
+@mixin headLines {
+  h2{
+    font-size: 2em;
+  }
+  h3{
+    font-size: 1.2em;
+  }
+  h2, h3 {
+    color: $contrastColor;
+    font-family: $titleFont;
+    text-transform: uppercase;
+  }
 }
+@include headLines();

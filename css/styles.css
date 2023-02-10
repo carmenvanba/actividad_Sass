@@ -187,10 +187,19 @@ nav ul {
 .data {
   background-color: lightyellow; }
 
-.circle {
-  width: 10px;
-  height: 10px;
-  background: #ffc470;
-  border-radius: 50%; }
+.sidebar {
+  float: right;
+  margin-left: 72px; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.2em; }
+
+h2, h3 {
+  color: #fba52a;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=styles.css.map */
